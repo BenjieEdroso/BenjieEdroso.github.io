@@ -5,9 +5,6 @@
   align-items: baseline;
   justify-content: space-between;
   margin: $hero_mt $hero_mlr 0 $hero_mlr;
-  &--contact {
-    margin: 5.25rem 6.75rem 5.25rem 6.75rem;
-  }
 
   &__greet {
     font-size: $her0_h1_fs;
@@ -25,11 +22,7 @@
   }
 
   &__green {
-    color: $fourth-color;
-
-    &--contact {
-      color: $second-color;
-    }
+    color: blue;
   }
 
   &__intro {

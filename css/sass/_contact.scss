@@ -1,6 +1,6 @@
 .contact {
   &__container {
-    margin: 0 6.75rem 5.25rem 6.75rem;
+    margin: 0 6.75rem;
   }
 
   &__form--top {
@@ -10,11 +10,6 @@
 
   &__inputCont {
     position: relative;
-
-    &--msg,
-    &--submit {
-      margin-top: 3.937rem;
-    }
   }
   &__label {
     color: $fourth-color;
@@ -23,77 +18,15 @@
     position: absolute;
   }
 
-  &__sendMsg {
-    background: none;
-    padding: 18px 40px;
-    color: $third-color;
-    font-family: "Roboto";
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      color: $dark_color;
-      background-color: $third-color;
-      transition: all 0.3s ease-in-out;
-    }
-  }
-
   &__input {
     border: none;
     border-bottom: 1px solid $fourth-color;
     background: none;
     outline: none;
+
     color: $fourth-color;
     width: 18.187rem;
     font-size: 1rem;
     padding: 0.5rem clamp(2.493rem, 50%, 4.843rem);
-
-    &[type="textarea"] {
-      width: 100%;
-    }
-  }
-
-  &__mapCont {
-    margin: 0 6.75rem 4.35rem 6.75rem;
-    display: flex;
-  }
-
-  &__details {
-    display: inline-block;
-  }
-
-  &__detailsCont {
-    margin-left: 5.293rem;
-  }
-
-  &__detailsItem {
-    color: $third-color;
-    font-family: "Poppins";
-    font-size: 1.187rem;
-    margin-bottom: 1.687rem;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-
-    span {
-      display: block;
-    }
-  }
-
-  &__subInfo {
-    color: $fourth-color;
-    font-family: "Roboto";
-    font-size: 0.937rem;
-    font-style: normal;
-  }
-
-  &__map {
-    width: 48.331rem;
-    height: 18.588rem;
-    background-color: #fff;
   }
 }
