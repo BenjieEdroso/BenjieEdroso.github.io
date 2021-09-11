@@ -1,0 +1,102 @@
+.worksSingle {
+  padding: 0 6.75em;
+  &__head {
+    color: #fff;
+    font-size: 3.187rem;
+    margin-top: 2.187em;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__subhead {
+    color: $fourth-color;
+    font-size: 0.99em;
+    font-weight: 500;
+    margin-bottom: 6.562em;
+  }
+
+  &__sSWrapper {
+    margin-bottom: 4.887em;
+  }
+
+  &__screenShot {
+    width: 48.687rem;
+    height: 32.458rem;
+
+    background: url("/img/b1_single.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__sSText {
+    text-align: center;
+    color: $fourth-color;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
+  }
+
+  &__overviewCont {
+    margin-left: 3.875em;
+  }
+
+  &__overview {
+    color: $third-color;
+  }
+
+  &__overviewText {
+    color: $fourth-color;
+    font-size: 1.062rem;
+    font-weight: 400;
+  }
+
+  &__detailsCont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.312em;
+  }
+
+  &__detailsTitle {
+    color: $third-color;
+    font-family: "Roboto";
+    font-size: 1.062rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+
+  &__detailsItem {
+    color: $fourth-color;
+    font-size: 1.062em;
+    font-family: "Roboto";
+    margin-bottom: 0.625em;
+  }
+
+  &__nextCont {
+    text-align: center;
+    padding: 8.125rem 0;
+  }
+  &__nextProj {
+    display: inline-block;
+    font-family: "Poppins";
+    font-size: 2.375rem;
+    color: $third-color;
+
+    &:hover {
+      color: $second-color;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  &__nextLabel {
+    display: block;
+    font-family: "Roboto";
+    font-size: 0.937rem;
+    color: $fourth-color;
+  }
+}
+
+.fixed {
+  position: sticky;
+  top: 4.062em;
+}

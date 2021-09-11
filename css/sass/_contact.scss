@@ -1,0 +1,32 @@
+.contact {
+  &__container {
+    margin: 0 6.75rem;
+  }
+
+  &__form--top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__inputCont {
+    position: relative;
+  }
+  &__label {
+    color: $fourth-color;
+    font-family: "Roboto";
+    font-size: 0.937rem;
+    position: absolute;
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid $fourth-color;
+    background: none;
+    outline: none;
+
+    color: $fourth-color;
+    width: 18.187rem;
+    font-size: 1rem;
+    padding: 0.5rem clamp(2.493rem, 50%, 4.843rem);
+  }
+}

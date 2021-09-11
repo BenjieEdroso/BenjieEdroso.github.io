@@ -1,0 +1,129 @@
+@import "./variables/global@variables";
+@import "./variables/latest@variables";
+.latest {
+  &__flex {
+    color: $third-color;
+    display: flex;
+    justify-content: space-between;
+    margin: $latest_margin;
+  }
+  &__head {
+    font-size: $head_fs;
+    font-weight: $head_fw;
+  }
+  &__item {
+    margin-left: $type_margin_l;
+    &:nth-child(1) a {
+      color: $second-color;
+    }
+    &:first-of-type {
+      margin: 0;
+    }
+  }
+  &__link {
+    color: $third-color;
+    &::after {
+      content: "";
+      clear: both;
+      display: inline-block;
+      width: 2px;
+      height: 13px;
+      background-color: $third-color;
+      transform: rotate(25deg);
+      position: relative;
+      left: 22.5px;
+    }
+  }
+  &__works {
+    width: $latest_works_width;
+    height: $latest_works_height;
+    margin: $latest_works_margin;
+    display: grid;
+    grid-template-columns: $latest_works_grid_template_col;
+    justify-items: center;
+    gap: $latest_works_grid_gap;
+  }
+  &__row {
+    width: $b1-w;
+  }
+  &__workItem {
+    margin-bottom: $b1_margin_b;
+    width: $b1-w;
+    &--b1H {
+      height: $b1_h;
+    }
+    &--b2H {
+      height: $b2_h;
+    }
+    &--b3H {
+      height: $b3_h;
+    }
+    &:hover {
+      cursor: pointer;
+      :first-child {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          $b1_img;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: scale(0.98);
+        transition: all 0.2s ease-in-out;
+      }
+
+      :nth-child(3) {
+        transform: translateY(-15px);
+        opacity: 0;
+        transition: 0.2s all ease-in-out;
+      }
+
+      :last-child {
+        transform: translateY(-15px);
+        opacity: 1;
+        transition: 0.2s all ease-in-out;
+      }
+    }
+  }
+  &__image {
+    &--b1ImgH {
+      height: $b1_img_h;
+    }
+    &--b2ImgH {
+      height: $b2_img_h;
+    }
+    &--b3ImgH {
+      height: $b3_img_h;
+    }
+    width: 100%;
+    background: $b1_img;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+  }
+  &__title {
+    margin-top: $title_margin_t;
+    font-size: 15px;
+    color: $third-color;
+  }
+  &__stack,
+  &__view {
+    font-family: $view_stack_ff;
+    font-size: $view_stack_fs;
+    color: $fourth-color;
+    transition: 0.2s all ease-in-out;
+  }
+  &__view {
+    opacity: 0;
+    &::after {
+      content: "";
+      clear: both;
+      display: inline-block;
+      width: 15px;
+      height: 3px;
+      border-radius: 5px;
+      position: relative;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $second-color;
+    }
+  }
+}
