@@ -1,0 +1,22 @@
+{
+  "name": "benjieedroso.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio for 2021",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass css/sass/style.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjieEdroso/BenjieEdroso.github.io.git"
+  },
+  "author": "Benjie Edroso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjieEdroso/BenjieEdroso.github.io/issues"
+  },
+  "homepage": "https://github.com/BenjieEdroso/BenjieEdroso.github.io#readme",
+  "dependencies": {
+    "sass": "^1.39.2"
+  }
+}
