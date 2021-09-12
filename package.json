@@ -4,7 +4,7 @@
   "description": "My portfolio for 2021",
   "main": "index.js",
   "scripts": {
-    "build:sass": "sass css/sass/style.scss css/style.css --watch"
+    "build:sass": "sass css/scss/style.scss css/style.css --watch"
   },
   "repository": {
     "type": "git",
