@@ -1,9 +1,3 @@
-.hero {
-  &--about {
-    width: 573px;
-  }
-}
-
 .about {
   &__container {
     width: 65.437rem;
@@ -12,16 +6,12 @@
     display: flex;
   }
 
-  &__photo {
-    width: 35.25rem;
-    height: 47.062rem;
+  &--greet {
+    width: 35.812rem;
+  }
 
-    background: url("/img/profile.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  &__photoCont {
     position: relative;
-
     &::after {
       content: "";
       clear: both;
@@ -35,6 +25,15 @@
       left: -2.312rem;
       z-index: -3;
     }
+  }
+
+  &__photo {
+    width: 35.25rem;
+    height: 47.062rem;
+    object-fit: cover;
+    content: "fake content";
+    display: block;
+    position: relative;
   }
   &__details {
     padding-left: 4.187rem;
