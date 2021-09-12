@@ -139,12 +139,9 @@
     &:hover {
       cursor: pointer;
       :first-child {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-          $b1_img;
-        background-size: cover;
-        background-repeat: no-repeat;
         transform: scale(0.98);
         transition: all 0.2s ease-in-out;
+        filter: opacity(30%);
       }
 
       :nth-child(3) {
@@ -161,6 +158,11 @@
     }
   }
   &__image {
+    &--b1ImgH,
+    &--b2ImgH,
+    &--b3ImgH {
+      object-fit: cover;
+    }
     &--b1ImgH {
       height: $b1_img_h;
     }
