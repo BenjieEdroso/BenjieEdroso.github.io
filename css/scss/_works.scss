@@ -1,8 +1,6 @@
-@import "./variables/works@variables";
-
+//style for works@works
 .works {
-  padding-left: $works_p_l;
-  padding-top: $works_p_t;
+  padding: $works_padding;
 
   &__title {
     font-family: $title_ff;
@@ -17,7 +15,7 @@
     margin-bottom: $flex_mb;
   }
 }
-
+//style for workItem@works
 .workItem {
   margin-left: $workItem_ml;
   margin-right: $workItem_mr;
@@ -30,6 +28,7 @@
     gap: $grid_gap;
   }
 
+  //style for workSize@works
   .latest__image--b1ImgH,
   .latest__workItem--b1H {
     width: $workItem_h;
@@ -55,20 +54,4 @@
     font-weight: $loadBtn_fw;
     margin: 0 auto;
   }
-}
-
-.hideLoadBtn {
-  opacity: 0;
-  transform: all 0.4s ease-in-out;
-}
-
-.hideStack {
-  transform: translateY(-15px);
-  opacity: 0;
-  transition: 0.2s all ease-in-out;
-}
-.showView {
-  transform: translateY(-15px);
-  opacity: 1;
-  transition: 0.2s all ease-in-out;
 }
