@@ -1,0 +1,305 @@
+//style for latest navbar@index.html
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: $navbar_m_t $navbar_m_lr 0 $navbar_m_lr;
+  &__logo {
+    color: $third-color;
+    font-family: $second-font;
+    font-size: $navbar_logo_size;
+  }
+  &__item {
+    margin-right: $navbar_links_li_mr;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    color: $third-color;
+    font-size: $navbar_links_a_fs;
+    font-weight: $navbar_links_a_fw;
+    &::after {
+      content: "";
+      clear: both;
+      display: block;
+      border-radius: $navbar_links_a_after_br;
+      width: $navbar_links_a_after_w;
+      height: $navbar_links_a_after_h;
+      opacity: 0;
+      transition: all $navbar_links_a_after_w_hover_ts;
+      background-color: $second-color;
+    }
+    &:hover::after {
+      opacity: 1;
+      width: $navbar_links_a_after_w_hover;
+      transition: all $navbar_links_a_after_w_hover_ts;
+    }
+  }
+}
+//style for latest hero@index.html
+.hero {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: $hero_mt $hero_mlr 0 $hero_mlr;
+  &--contact {
+    margin: 5.25rem 6.75rem 5.25rem 6.75rem;
+  }
+
+  &__greet {
+    font-size: $her0_h1_fs;
+    font-family: "Poppins";
+    font-weight: $her0_h1_fw;
+    color: $third-color;
+    width: $her0_h1_w;
+
+    &--about {
+      width: 42.062rem;
+      font-size: 44px;
+      color: $third-color;
+      line-height: 65px;
+    }
+  }
+
+  &__green {
+    color: $second-color;
+
+    &--contact {
+      color: $second-color;
+    }
+  }
+
+  &__intro {
+    width: $hero_intro_w;
+    font-family: $second-font;
+    font-size: $hero_intro_fs;
+    color: $fourth-color;
+  }
+}
+
+//style for latest section@index.html
+.latest {
+  &__flex {
+    color: $third-color;
+    display: flex;
+    justify-content: space-between;
+    margin: $latest_margin;
+  }
+  &__head {
+    font-size: $head_fs;
+    font-weight: $head_fw;
+  }
+  &__item {
+    margin-left: $type_margin_l;
+    &:nth-child(1) a {
+      color: $second-color;
+    }
+    &:first-of-type {
+      margin: 0;
+    }
+  }
+  &__link {
+    color: $third-color;
+    &::after {
+      content: "";
+      clear: both;
+      display: inline-block;
+      width: 2px;
+      height: 13px;
+      background-color: $third-color;
+      transform: rotate(25deg);
+      position: relative;
+      left: 22.5px;
+    }
+  }
+  &__works {
+    width: $latest_works_width;
+    height: $latest_works_height;
+    margin: $latest_works_margin;
+    display: grid;
+    grid-template-columns: $latest_works_grid_template_col;
+    justify-items: center;
+    gap: $latest_works_grid_gap;
+  }
+  &__row {
+    width: $b1-w;
+  }
+  &__workItem {
+    margin-bottom: $b1_margin_b;
+    width: $b1-w;
+    &--b1H {
+      height: $b1_h;
+    }
+    &--b2H {
+      height: $b2_h;
+    }
+    &--b3H {
+      height: $b3_h;
+    }
+    &:hover {
+      cursor: pointer;
+      :first-child {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          $b1_img;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: scale(0.98);
+        transition: all 0.2s ease-in-out;
+      }
+
+      :nth-child(3) {
+        transform: translateY(-15px);
+        opacity: 0;
+        transition: 0.2s all ease-in-out;
+      }
+
+      :last-child {
+        transform: translateY(-15px);
+        opacity: 1;
+        transition: 0.2s all ease-in-out;
+      }
+    }
+  }
+  &__image {
+    &--b1ImgH {
+      height: $b1_img_h;
+    }
+    &--b2ImgH {
+      height: $b2_img_h;
+    }
+    &--b3ImgH {
+      height: $b3_img_h;
+    }
+    width: 100%;
+    background: $b1_img;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+  }
+  &__title {
+    margin-top: $title_margin_t;
+    font-size: 15px;
+    color: $third-color;
+  }
+  &__stack,
+  &__view {
+    font-family: $view_stack_ff;
+    font-size: $view_stack_fs;
+    color: $fourth-color;
+    transition: 0.2s all ease-in-out;
+  }
+  &__view {
+    opacity: 0;
+    &::after {
+      content: "";
+      clear: both;
+      display: inline-block;
+      width: 15px;
+      height: 3px;
+      border-radius: 5px;
+      position: relative;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $second-color;
+    }
+  }
+}
+
+//style for email@index.html
+.email {
+  width: $email_w;
+  margin: $email_m;
+
+  &__bg {
+    position: relative;
+    font-size: $email_bg_fs;
+    color: $dark_color;
+
+    a {
+      position: absolute;
+      font-size: $email_gmail_fs;
+      color: $third-color;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: color 0.4s ease-in-out;
+    }
+
+    a:hover {
+      color: $second-color;
+      transition: color 0.4s ease-in-out;
+    }
+  }
+}
+
+//style for footer@index.html
+.footer {
+  width: $footer_w;
+  margin: $footer_m;
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    margin: $footer_item_m;
+    position: relative;
+
+    &:last-of-type::after {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      clear: both;
+      display: inline-block;
+      width: $footer_after_w;
+      height: $footer_after_h;
+      background-color: $second-color;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -20px;
+    }
+  }
+
+  &__links:nth-child(1) {
+    margin: 0;
+  }
+  &__link {
+    position: relative;
+    display: block;
+    width: inherit;
+    overflow: hidden;
+
+    &--text {
+      color: $fourth-color;
+      transition: $footer_transition;
+      display: block;
+    }
+
+    &--img {
+      position: absolute;
+      left: 50%;
+      opacity: 0;
+      bottom: -13px;
+      transform: translateX(-50%);
+      transition: $footer_transition;
+    }
+  }
+
+  &__link:hover span {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: $footer_transition;
+  }
+
+  &__link:hover img {
+    transform: translate(-50%, -100%);
+    opacity: 1;
+    transition: $footer_transition;
+  }
+
+  &__copy {
+    color: $fourth-color;
+  }
+}
