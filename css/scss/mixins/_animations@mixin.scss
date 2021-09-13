@@ -1,0 +1,22 @@
+@mixin hoverWork {
+  &:hover {
+    cursor: pointer;
+    :first-child {
+      transform: scale(0.98);
+      transition: all 0.2s ease-in-out;
+      filter: opacity(30%);
+    }
+
+    :nth-child(3) {
+      transform: translateY(-15px);
+      opacity: 0;
+      transition: 0.2s all ease-in-out;
+    }
+
+    :last-child {
+      transform: translateY(-15px);
+      opacity: 1;
+      transition: 0.2s all ease-in-out;
+    }
+  }
+}

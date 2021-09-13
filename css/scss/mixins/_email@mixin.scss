@@ -1,0 +1,27 @@
+@mixin email {
+  .email {
+    width: $email_w;
+    margin: $email_m;
+
+    &__bg {
+      position: relative;
+      font-size: $email_bg_fs;
+      color: $dark_color;
+
+      a {
+        position: absolute;
+        font-size: $email_gmail_fs;
+        color: $third-color;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: color 0.4s ease-in-out;
+      }
+
+      a:hover {
+        color: $second-color;
+        transition: color 0.4s ease-in-out;
+      }
+    }
+  }
+}

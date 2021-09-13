@@ -13,7 +13,7 @@ var anim1 = new Animations(
 anim1.animateWorks();
 loadMore();
 if (location == "http://127.0.0.1:5500/works.html") {
-  let work = document.querySelector(".latest__row--workItem");
+  let work = document.querySelector(".works__workItem--b1H");
   work.addEventListener("click", (e) => {
     location = "works_single.html";
   });

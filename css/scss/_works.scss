@@ -1,12 +1,17 @@
 //style for works@works
 .works {
   padding: $works_padding;
+  &__grid {
+    display: grid;
+    gap: 2.437rem;
+    grid-template-columns: 34.687rem 34.687rem;
+  }
 
   &__title {
+    color: $third-color;
     font-family: $title_ff;
     font-size: $title_fs;
     font-weight: $title_fw;
-    color: $third-color;
     margin-bottom: $title_mb;
   }
 
@@ -14,24 +19,21 @@
     display: flex;
     margin-bottom: $flex_mb;
   }
-}
-//style for workItem@works
-.workItem {
-  margin-left: $workItem_ml;
-  margin-right: $workItem_mr;
-  padding-bottom: $workItem_pb;
-
-  &__grid {
-    width: $grid_w;
-    display: grid;
-    grid-template-columns: $grid_tc;
-    gap: $grid_gap;
+  &__image--b1ImgH,
+  &__workItem--b1H {
+    @include hoverWork;
+    width: 34.687rem;
   }
 
-  //style for workSize@works
-  .latest__image--b1ImgH,
-  .latest__workItem--b1H {
-    width: $workItem_h;
+  &__workItem {
+    padding-bottom: $workItem_pb;
+
+    &__grid {
+      display: grid;
+      gap: $grid_gap;
+      grid-template-columns: $grid_tc;
+      width: $grid_w;
+    }
   }
 
   &__loadBtn {
@@ -43,7 +45,7 @@
     }
 
     display: block;
-    margin-top: $loadBtn_mt;
+
     padding: $loadBtn_p;
     text-align: center;
     background: none;
@@ -52,6 +54,6 @@
     cursor: pointer;
     font-family: $loadBtn_ff;
     font-weight: $loadBtn_fw;
-    margin: 0 auto;
+    margin: $loadBtn_mt auto 0 auto;
   }
 }
