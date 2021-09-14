@@ -27,4 +27,7 @@ export function loadMore() {
       );
     });
   }
+
+  console.log(`${protocol}//${domain}/works.html`);
+  console.log(location);
 }
