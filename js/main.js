@@ -12,13 +12,13 @@ var anim1 = new Animations(
 
 anim1.animateWorks();
 loadMore();
-if (location == "http://127.0.0.1:5500/works.html") {
+if (location == "https://benjieedroso.tech/works.html") {
   let work = document.querySelector(".works__workItem--b1H");
   work.addEventListener("click", (e) => {
     location = "works_single.html";
   });
 }
-if (location == "http://127.0.0.1:5500/works_single.html") {
+if (location == "https://benjieedroso.tech/works_single.html") {
   window.addEventListener("scroll", () => {
     let myel = document.querySelector(".worksSingle__overviewCont");
 

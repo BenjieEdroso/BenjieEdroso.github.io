@@ -3,7 +3,7 @@ import { sendHttpRequest } from "../ajax/ajax.js";
 export function loadMore() {
   let loadBtn = document.querySelector(".works__loadBtn");
 
-  if (location == "http://127.0.0.1:5500/works.html") {
+  if (location == "https://benjieedroso.tech/works.html") {
     loadBtn.addEventListener("click", () => {
       sendHttpRequest("GET", "works_template.html", loadBtn).then(
         (responseData) => {
