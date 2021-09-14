@@ -31,7 +31,7 @@
     width: 35.25rem;
     height: 47.062rem;
     object-fit: cover;
-    content: "fake content";
+    content: "";
     display: block;
     position: relative;
   }
@@ -61,6 +61,12 @@
     color: $third-color;
     border: 1px solid $third-color;
     padding: 1.125rem 3.125rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $third-color;
+      transition: all 0.3s ease-in-out;
+      color: $dark-color;
+    }
   }
 
   &__stacksCont {

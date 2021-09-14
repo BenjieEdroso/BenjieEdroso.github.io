@@ -1,4 +1,3 @@
-//style for works@works
 .works {
   padding: $works_padding;
   &__grid {
@@ -44,16 +43,15 @@
       transition: $transition;
     }
 
-    display: block;
-
-    padding: $loadBtn_p;
-    text-align: center;
     background: none;
     border: 1px solid $third-color;
     color: $third-color;
     cursor: pointer;
+    display: block;
     font-family: $loadBtn_ff;
     font-weight: $loadBtn_fw;
     margin: $loadBtn_mt auto 0 auto;
+    padding: $loadBtn_p;
+    text-align: center;
   }
 }

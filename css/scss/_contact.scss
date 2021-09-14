@@ -92,8 +92,18 @@
   }
 
   &__map {
-    width: 48.331rem;
-    height: 18.588rem;
+    height: 0;
     background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 297.42px;
+
+    &iframe {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
   }
 }

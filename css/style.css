@@ -249,6 +249,9 @@ a {
   margin: 0 1em;
   position: relative;
 }
+.footer__item:first-of-type {
+  margin-left: 0;
+}
 .footer__item:last-of-type::after {
   display: none;
 }
@@ -351,16 +354,16 @@ a {
   width: 100%;
 }
 .works__loadBtn {
-  display: block;
-  padding: 18px 3.312rem;
-  text-align: center;
   background: none;
   border: 1px solid #fff;
   color: #fff;
   cursor: pointer;
+  display: block;
   font-family: "Roboto";
   font-weight: 500;
   margin: 7.3rem auto 0 auto;
+  padding: 18px 3.312rem;
+  text-align: center;
 }
 .works__loadBtn:hover {
   background-color: #fff;
@@ -487,7 +490,7 @@ a {
   width: 35.25rem;
   height: 47.062rem;
   object-fit: cover;
-  content: "fake content";
+  content: "";
   display: block;
   position: relative;
 }
@@ -514,6 +517,12 @@ a {
   color: #fff;
   border: 1px solid #fff;
   padding: 1.125rem 3.125rem;
+  transition: all 0.3s ease-in-out;
+}
+.about__cv:hover {
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  color: #0d0f0f;
 }
 .about__stacksCont {
   margin-top: 6.968rem;
@@ -606,9 +615,18 @@ a {
   font-style: normal;
 }
 .contact__map {
-  width: 48.331rem;
-  height: 18.588rem;
+  height: 0;
   background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 297.42px;
+}
+.contact__mapiframe {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */

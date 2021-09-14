@@ -8,6 +8,10 @@
       margin: $footer_item_m;
       position: relative;
 
+      &:first-of-type {
+        margin-left: 0;
+      }
+
       &:last-of-type::after {
         display: none;
       }
