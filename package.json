@@ -18,5 +18,6 @@
   "homepage": "https://github.com/BenjieEdroso/BenjieEdroso.github.io#readme",
   "dependencies": {
     "sass": "^1.39.2"
-  }
+  },
+  "type": "module"
 }
