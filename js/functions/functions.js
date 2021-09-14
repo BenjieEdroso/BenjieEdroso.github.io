@@ -23,6 +23,8 @@ function applySticky() {
       }
     });
   }
+
+  console.log(`${protocol}//${domain}:${port}${pathname}`);
 }
 
 export { redirectToWorks, applySticky };
