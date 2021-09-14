@@ -8,21 +8,23 @@ let pathname = newURL.pathname;
 
 export function loadMore() {
   let loadBtn = document.querySelector(".works__loadBtn");
-  if (location == `${protocol}//${domain}/works`) {
+  if (location == `${protocol}//${domain}:${port}/works.html`) {
     loadBtn.addEventListener("click", () => {
-      sendHttpRequest("GET", "works_template", loadBtn).then((responseData) => {
-        let limit = 8;
-        let element = document.querySelector(".works__grid");
-        let loadBtn = document.querySelector(".works__loadBtn");
-        if (element.children.length < limit) {
-          element.insertAdjacentHTML("beforeend", responseData);
+      sendHttpRequest("GET", "works_template.html", loadBtn).then(
+        (responseData) => {
+          let limit = 8;
+          let element = document.querySelector(".works__grid");
+          let loadBtn = document.querySelector(".works__loadBtn");
+          if (element.children.length < limit) {
+            element.insertAdjacentHTML("beforeend", responseData);
+          }
+          if (element.children.length == 8) {
+            loadBtn.textContent = "No more works";
+          } else {
+            loadBtn.textContent = "Load More";
+          }
         }
-        if (element.children.length == 8) {
-          loadBtn.textContent = "No more works";
-        } else {
-          loadBtn.textContent = "Load More";
-        }
-      });
+      );
     });
   }
 }
