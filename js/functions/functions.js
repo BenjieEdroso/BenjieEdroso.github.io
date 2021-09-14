@@ -6,7 +6,7 @@ let port = newURL.port;
 let pathname = newURL.pathname;
 
 function redirectToWorks() {
-  if (location == `${protocol}//${domain}:${port}/works.html`) {
+  if (location == `${protocol}//${domain}/works.html`) {
     let work = document.querySelector(".works__workItem--b1H");
     work.addEventListener("click", (e) => {
       location = "works_single.html";
@@ -15,7 +15,7 @@ function redirectToWorks() {
 }
 
 function applySticky() {
-  if (location == `${protocol}//${domain}:${port}${pathname}`) {
+  if (location == `${protocol}//${domain}${pathname}`) {
     window.addEventListener("scroll", () => {
       let myel = document.querySelector(".worksSingle__overviewCont");
       if (window.scrollY >= myel.offsetTop) {
