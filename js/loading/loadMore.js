@@ -1,8 +1,14 @@
 import { sendHttpRequest } from "../ajax/ajax.js";
+let url = location;
+let newURL = new URL(url);
+let domain = newURL.hostname;
+let protocol = newURL.protocol;
+let port = newURL.port;
+let pathname = newURL.pathname;
 
 export function loadMore() {
   let loadBtn = document.querySelector(".works__loadBtn");
-  if (location == "http://127.0.0.1:5500/works.html") {
+  if (location == `${protocol}//${domain}:${port}/works.html`) {
     loadBtn.addEventListener("click", () => {
       sendHttpRequest("GET", "works_template.html", loadBtn).then(
         (responseData) => {
