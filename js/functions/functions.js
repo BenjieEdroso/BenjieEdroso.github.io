@@ -6,7 +6,7 @@ let port = newURL.port;
 let pathname = newURL.pathname;
 
 function redirectToWorks() {
-  if (location == `${protocol}//${domain}/works.html`) {
+  if (location == `${protocol}//${domain}/works`) {
     let work = document.querySelector(".works__workItem--b1H");
     work.addEventListener("click", (e) => {
       location = "works_single.html";
