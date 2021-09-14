@@ -8,7 +8,11 @@ let port = newURL.port;
 let pathname = newURL.pathname;
 
 function redirectToWorks() {
+<<<<<<< HEAD
   if (location == `${protocol}//${domain}:${port}/works.html`) {
+=======
+  if (location == `${protocol}//${domain}/works.html`) {
+>>>>>>> parent of 04626fe (update loadmodules, functions)
     let work = document.querySelector(".works__workItem--b1H");
     work.addEventListener("click", (e) => {
       sendHttpRequest("GET", "works_single.html").then((responseData) => {

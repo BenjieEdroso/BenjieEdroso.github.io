@@ -8,7 +8,11 @@ let pathname = newURL.pathname;
 
 export function loadMore() {
   let loadBtn = document.querySelector(".works__loadBtn");
+<<<<<<< HEAD
   if (location == `${protocol}//${domain}:${port}/works.html`) {
+=======
+  if (location == `${protocol}//${domain}/works.html`) {
+>>>>>>> parent of 04626fe (update loadmodules, functions)
     loadBtn.addEventListener("click", () => {
       sendHttpRequest("GET", "works_template.html", loadBtn).then(
         (responseData) => {
