@@ -8,7 +8,7 @@ let pathname = newURL.pathname;
 
 export function loadMore() {
   let loadBtn = document.querySelector(".works__loadBtn");
-  if (location == `${protocol}//${domain}/works`) {
+  if (location == `${protocol}//${domain}/works.html`) {
     loadBtn.addEventListener("click", () => {
       sendHttpRequest("GET", "works_template.html", loadBtn).then(
         (responseData) => {
